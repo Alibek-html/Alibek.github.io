@@ -1,0 +1,417 @@
+body{
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+    
+body::-webkit-scrollbar-track{
+    background: black;
+}
+    
+body::-webkit-scrollbar-thumb{
+      background:rgb(103, 149, 247);
+}
+
+#header{
+    background-color: rgba(0, 81, 255, 0.411);
+    display: flex;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#search-logo{
+    width: 30px;
+    height: 30px;
+    margin: 8px 10px 0 10%;
+    cursor: pointer;
+}
+
+#search-text{
+    border-radius: 14px;
+    width: 200px;
+    height: 25px;
+    margin: 8px 0 0 0;
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.541); 
+}
+
+#join{
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font: normal bold 25px 'Roboto',Arial,sans-serif;
+    text-decoration: underline;
+    display: flex;
+    cursor: pointer;
+}
+
+#join-text{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+#signing{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    width: 300px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.sign-btn{
+    background-color: darkblue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+#signing-close-btn{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 265px;
+    width: 25px; 
+    cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#signup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+#header-logo{
+    cursor: pointer;
+    width: 40px;
+    margin: 3px 0 3px 150px;
+}
+
+#main{
+    background-image: url(main_gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+}
+
+#main-text{
+    position: absolute;
+    top: 200px;
+    right: 3%;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#introduction{
+    background-image: linear-gradient(to right, rgba(0, 38, 255, 0.3), rgba(0, 38, 255, 0.11), rgba(0, 38, 255, 0.11), rgba(0, 38, 255, 0.3));
+}
+
+#h1-intro{
+    padding: 2% 0 1% 15%;
+    margin: 0;
+}
+
+#intro-text{
+    margin: 0;
+    padding: 30px 15% 50px 15%;
+    font-size: 20px;
+}
+
+#freshes{
+    /* background-image: linear-gradient(white, rgba(0, 132, 255, 0.486), rgba(160, 2, 165, 0.514), white); */
+    background-image: linear-gradient( rgba(0, 38, 255, 0.3), white, rgba(0, 38, 255, 0.3));
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#h1-fresh-goods{
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+
+#fresh-goods{
+    margin: 3% 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.fresh-product{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    font-family: arial;
+    flex: 0 0 auto;
+}
+      
+.price {
+    color: rgb(71, 36, 0);
+    font-size: 22px;
+}
+
+.product-intro{
+    color: black;
+}
+
+.fresh-product-h1{
+    color: blue;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+/* #my-background{
+    background: transparent url(main_gif.gif) repeat fixed center center;
+    background-size: cover;
+} */
+
+#about-us{
+    background-color: rgb(250, 120, 60);
+    font-weight: bold;
+    display: flex;
+    padding: 50px;
+}
+
+#about-us h1{
+    margin: 3% 0 3% 3%;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#about-us h1:hover{
+    color: white;
+}
+
+#about-us p{
+    font-size: 20px;
+    margin-left: 3%;
+    
+}
+
+#about-us-img{
+    margin-top: 50px;
+    width: 600px;
+}   
+
+#how-to-find{
+    background-color:rgba(0, 4, 255, 0.774);
+    margin: 0;
+    padding-bottom: 150px;
+}
+
+#find{
+    display: flex;
+}
+
+#we{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    margin-top: 6.5%;
+    margin-left: 3.6%;
+    width: 130px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font: caption;
+    font-size: 18px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}   
+
+#map{
+    width: 80%;
+    height: 450px;
+    margin: 0 3% 0 3%;
+}
+
+#contacts{
+    color: white;
+}
+
+.contact-text{
+    color: white;
+}
+
+.contact-img{
+    width: 40px;
+    margin: 5px 0;
+}
+
+.contact{
+    margin: 25px 0;
+}
+
+@media(max-width: 980px) {
+
+    #main{
+        height: 400px;
+    }
+
+    #main-text{
+        top: 150px;
+        right: 2%;
+        font-size: 15px;
+    }
+
+    #h1-intro{
+        font-size: 25px;
+        padding-top: 33px;
+    }
+
+    #intro-text{
+        font-size: 18px;
+        padding-top: 0;
+    }
+
+    #freshes{
+        padding-top: 0;
+    }
+    
+    #h1-fresh-goods{
+        font-size: 25px;
+    }
+
+    .fresh-product{
+    max-width: 250px;
+    margin: 20px;
+    }
+
+    .fresh-product-h1{
+        font-size: 20px;
+    }
+
+    .price{
+        font-size: 16px;
+    }
+
+    .product-intro{
+        font-size: 11px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .search{
+        display: none;
+    }
+
+    #main{
+        height: 300px;
+    }
+
+    #main-text{
+        top: 100px;
+        right: 1%;
+        font-size: 12px;
+    }
+
+    #header-logo{
+        width: 35px;
+        margin-left: 22px;
+    }
+
+    #cart-join{
+        top: 8px;
+    }
+
+    #h1-intro{
+        font-size: 22px;
+        padding-top: 30px;
+    }
+
+    #intro-text{
+        font-size: 15px;
+        padding-top: 0;
+    }
+
+    #freshes{
+        padding-top: 0;
+    }
+    
+    #h1-fresh-goods{
+        font-size: 22px;
+    }
+
+    .fresh-product{
+    max-width: 200px;
+    margin: 15px;
+    }
+
+    .fresh-product-h1{
+        font-size: 20px;
+    }
+
+    .price{
+        font-size: 15px;
+    }
+
+    .product-intro{
+        font-size: 10px;
+    }
+
+}

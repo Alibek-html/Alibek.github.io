@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  <!-- AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA google API -->
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+  <link rel="stylesheet" href="style.css">
+  <title>Online shopping web-site</title>
+</head>
+<body id="body">
+
+    <div id="header">
+      <img id="header-logo" src="logo.png">
+      <img class="search" id="search-logo" src="search.png">
+      <input class="search" id="search-text" type="text" placeholder="Search...">
+
+      <div id="join" onclick="openSigning()">
+        <img src="personal_area.png" id="join-img" style="width: 30px; height: 30px;">
+        <div id="join-text">Join</div>
+      </div>
+
+      <div id="signing">
+        <img src="close_btn.png" id="signing-close-btn" onclick="closeSigning()">
+      <p style="padding-top: 40px;">If you are a new user, please, sign up</p>
+        <button type="submit" id="signup-btn" class="sign-btn" onclick="openSignup(), closeSigning()">Sign up</button>
+      <p>If you are already a user, please, sign in</p>
+        <button type="submit" id="signin-btn" class="sign-btn" onclick="openSignin(), closeSigning()">Sign in</button>
+      </div>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Sign in</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Sign in</button>
+          <button type="submit" class="btn cancel" onclick="closeSignin()">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="form-popup" id="signup">
+      <form action="/action_page.php" class="form-container">
+        <h1>Sign in</h1>
+    
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Write your name" name="name" required>
+
+        <label for="surname"><b>Surname</b></label>
+        <input type="text" placeholder="Write your surname" name="surname" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Write yorur Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Pick a password" name="psw" required>
+
+        <button type="submit" class="btn">Sign in</button>
+        <button type="submit" class="btn cancel" onclick="closeSignup()">Close</button>
+      </form>
+    </div>
+  </div>
+
+    <div id="main">
+      <div id="main-text">
+      <h1 id="h1-main">Thoughts in winter...</h1>
+      <h3 id="h3-main">Why am I cold?!.</h3>
+    </div>
+    </div>
+
+    <div id="introduction">
+      <h1 id="h1-intro">Welcome!</h1>
+      <p id="intro-text">You have come to exactly the site you wanted! 
+        In our store you will not only find warm clothes, but also purchase 
+        excellent sports equipment. Suits and tools for winter rock climbing, 
+        for alpine skiing, for spending the night in the forest in winter, 
+        as well as many other entertainment only in good quality.<br>
+        Perhaps you were wondering how to spend your time in winter? 
+        Am I right? Then what are you waiting for?! <a id="to-store" href="https://www.lcwaikiki.kz/ru-RU/KZ">Buy from us!</a></p>
+    </div>
+
+  <div id="freshes">
+
+<h1 id="h1-fresh-goods">F r e s h _ G o o d s</h1>
+
+    <div id="fresh-goods" >  
+      <div class="fresh-product product">
+        <img src="Ботинка.jpg" width="100%" height="50%">
+          <h1 class="fresh-product-h1">Sturdy boots</h1>
+          <p class="price">$29.99</p>
+          <p class="product-intro">Black, sturdy boots, leather boots. Remaining 100 pieces</p>
+      </div>
+      <div class="fresh-product product">
+        <img src="Шапка.jpg" width="100%" height="50%">
+          <h1 class="fresh-product-h1">Women's hats</h1>
+          <p class="price">$19.99</p>
+          <p class="product-intro">Gray, warm, high quality, completely fur. Remaining 100 pieces.</p>
+      </div>
+      <div class="fresh-product product">
+        <img src="Ботинка.jpg" width="100%" height="50%">
+          <h1 class="fresh-product-h1">Sturdy boots</h1>
+          <p class="price">$29.99</p>
+          <p class="product-intro">Black, sturdy boots, leather boots. Remaining 100 pieces</p>
+      </div>     
+      <div class="fresh-product product">
+        <img src="Шапка.jpg" width="100%" height="50%">
+          <h1 class="fresh-product-h1">Women's hats</h1>
+          <p class="price">$19.99</p>
+          <p class="product-intro">Gray, warm, high quality, completely fur. Remaining 100 pieces.</p>
+      </div>  
+      <div class="fresh-product product">
+        <img src="Ботинка.jpg" width="100%" height="50%">
+          <h1 class="fresh-product-h1">Sturdy boots</h1>
+          <p class="price">$29.99</p>
+          <p class="product-intro">Black, sturdy boots, leather boots. Remaining 100 pieces</p>
+      </div>  
+      <div class="fresh-product product">
+        <img src="Шапка.jpg" width="100%" height="50%">
+          <h1 class="fresh-product-h1">Women's hats</h1>
+          <p class="price">$19.99</p>
+          <p class="product-intro">Gray, warm, high quality, completely fur. Remaining 100 pieces.</p>
+      </div>  
+    </div>
+
+  </div>
+
+  <div id="about-us">
+    <div id="container-about-us">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Dignissimos, blanditiis dolorum. Aquam necessitatibus, vero 
+      eius voluptatibus at laborum magni, cumque delectus recusandae 
+      eum accusantium asperiores mollitia quidem, fugiat et! Lorem 
+      ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias 
+      enim quibusdam blanditiis, velit eveniet aliquid maiores modi 
+      omnis dolor natus libero vero eaque odit, facere consequuntur. 
+      Rerum, repellendus cumque. Lorem ipsum dolor sit, amet consectetur 
+      adipisicing elit. Molestiae doloremque consequatur debitis 
+      suscipit velit illum in, dolore assumenda quisquam dolorum 
+      asperiores ratione ea architecto, eveniet aut eaque... </p>
+  </div>
+      <img src="333.png" id="about-us-img">
+  </div>
+
+  <div id="how-to-find">
+
+    <h1 style="text-align: center; color: white; padding-top: 20px; font: caption; font-size: 32px;">Find us on<img src="google_maps_logo.png" alt="Google Maps" style="vertical-align: middle; height: 70px;"></h1>
+
+    <div id="find">
+
+    <div id="we" onclick="ownMarker()" onmouseover="hovering(this)" onmouseout="unhovering(this)">SHOW WHERE<br>WE ARE</div>
+
+    <div id="map"></div>
+
+  <div class="contacts">
+    <h4 style="color: white; margin: 0 0 30px 0;">Also you can contact us using:</h4>
+    <div class="contact">
+    <img class="contact-img" src="whatsapp_logo.png" alt="whatsapp">
+    <a class="contact-text" href="https://whatsapp.com">+7 707 342 23 47</a>
+    </div>
+    <div class="contact">
+    <img class="contact-img" src="instagram_logo.png" alt="instagram">
+    <a class="contact-text" href="https://instagram.com">@_a.l.i.b.e.k_</a>
+    </div>
+    <div class="contact">
+      <img class="contact-img" src="telegram_logo.png" alt="telegram">
+      <a class="contact-text" href="https://web.telegram.org/#/login">@nO_One_enO_On</a>
+    </div>
+    <div class="contact">
+      <img class="contact-img" src="facebook_logo.png" alt="facebook">
+      <a class="contact-text" href="https://www.facebook.com">@facebook</a>
+    </div>
+    <div class="contact">
+      <img class="contact-img" src="vk_logo.png" alt="VK">
+      <a class="contact-text" href="https://vk.com">@triple_ae</a>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+</div>
+
+  <script src = "script.js"></script>
+
+</body>
+</html>
